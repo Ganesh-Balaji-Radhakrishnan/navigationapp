@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const MealDetailScreen = () => {
+const MealDetailScreen = (props) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>This is MealDetailScreen</Text>
     </View>
   );
@@ -11,4 +11,11 @@ const MealDetailScreen = () => {
 
 export default MealDetailScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'white'
+    }
+});

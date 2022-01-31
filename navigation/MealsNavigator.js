@@ -7,8 +7,8 @@ import MealDetailScreen from "../screens/MealDetailScreen.js"
 
 const MealsNavigator = createStackNavigator({
     //identifier:property
-    CategoriesMeals : CategoriesMealsScreen,
     Categories : CategoriesScreen,
+    CategoriesMeals : CategoriesMealsScreen,
     //long format for using identifier:property pair
     MealDetail: {
         screen : MealDetailScreen
