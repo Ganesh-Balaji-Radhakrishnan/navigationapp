@@ -35,11 +35,6 @@ CategoriesMealsScreen.navigationOptions = (navigationData) => {
 
   return {
     headerTitle: filteredMeal.title,
-    headerStyle: {
-      backgroundColor:
-        Platform.OS === 'android' ? Colors.primaryColor : 'white',
-    },
-    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor,
   }
 }
 
