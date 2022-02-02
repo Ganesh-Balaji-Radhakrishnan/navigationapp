@@ -18,6 +18,7 @@ const MealsNavigator = createStackNavigator(
     },
   },
   {
+    /*initialRouteScreen: xyxz */ mode: 'modal',
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor:
