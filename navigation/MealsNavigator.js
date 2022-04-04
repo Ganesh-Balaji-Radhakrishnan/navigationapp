@@ -13,13 +13,13 @@ const MealsNavigator = createStackNavigator(
     Categories: { screen: CategoriesScreen },
     CategoriesMeals: { screen: CategoriesMealsScreen },
     //long format for using identifier:property pair
-    MealDetail: {
-      screen: MealDetailScreen,
-    },
+    MealDetail:  MealDetailScreen, //this is the short format of pairing key value to the screen name
   },
   {
-    /*initialRouteScreen: xyxz */ mode: 'modal',
-    defaultNavigationOptions: {
+    /*initialRouteName: 'MealDetail'*/
+    //initialRouteName make the app starts with that screen which makes the navigation void
+    mode: 'modal',
+    defaultNavigationOptions: { //it gets overwritten in the screen page
       headerStyle: {
         backgroundColor:
           Platform.OS === 'android' ? Colors.primaryColor : 'white',
